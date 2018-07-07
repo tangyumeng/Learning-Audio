@@ -7,6 +7,7 @@
 //
 
 #import "ListViewController.h"
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface ListViewController ()
 
@@ -16,22 +17,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self printFileMetaData];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)printFileMetaData
+{
+    NSString * path =  [[NSBundle mainBundle] pathForResource:@"任贤齐-伤心太平洋" ofType:@"mp3"];
+    NSURL *audioUrl = [NSURL fileURLWithPath:path];
+    
+    AudioFileID audioFile ;
+    OSStatus theErr = noErr;
+    theErr = AudioFileOpenURL((__bridge CFURLRef)audioUrl, kAudioFileReadPermission, 0, & audioFile);
+    assert(theErr == noErr);
+    UInt32 dictionarySize= 0;
+    theErr = AudioFileGetPropertyInfo(audioFile, kAudioFilePropertyInfoDictionary, &dictionarySize, 0);
+    assert(theErr == noErr);
+    CFDictionaryRef dictionary;
+    theErr = AudioFileGetProperty(audioFile, kAudioFilePropertyInfoDictionary, &dictionarySize, &dictionary);
+    assert(theErr == noErr);
+    NSLog(@"file dict is:%@",dictionary);
+    CFRelease(dictionary);
+    theErr = AudioFileClose(audioFile);
+    assert(theErr == noErr);
+    
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

@@ -15,6 +15,13 @@
 		7D770B0320E674DA00AED7D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D770B0220E674DA00AED7D6 /* main.m */; };
 		7D770B0D20E674DA00AED7D6 /* Audio1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D770B0C20E674DA00AED7D6 /* Audio1Tests.m */; };
 		7D770B1820E674DA00AED7D6 /* Audio1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D770B1720E674DA00AED7D6 /* Audio1UITests.m */; };
+		7D770B2620E6751C00AED7D6 /* It's A Good Day.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7D770B2520E6751C00AED7D6 /* It's A Good Day.mp3 */; };
+		7D770B2920E675C000AED7D6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D770B2820E675C000AED7D6 /* AudioToolbox.framework */; };
+		7D770B2B20E67B0F00AED7D6 /* 任贤齐-伤心太平洋.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7D770B2A20E67B0F00AED7D6 /* 任贤齐-伤心太平洋.mp3 */; };
+		7D770B2E20E7225F00AED7D6 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D770B2D20E7225F00AED7D6 /* ListViewController.m */; };
+		7D770B3520E7300C00AED7D6 /* DIYSamplesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D770B3420E7300C00AED7D6 /* DIYSamplesViewController.m */; };
+		7D770B7620E92A0400AED7D6 /* CAStreamFormatTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D770B7520E92A0400AED7D6 /* CAStreamFormatTestViewController.m */; };
+		7D770B7C20EA829C00AED7D6 /* AudioServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D770B7B20EA829C00AED7D6 /* AudioServiceViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,17 @@
 		7D770B1320E674DA00AED7D6 /* Audio1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Audio1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D770B1720E674DA00AED7D6 /* Audio1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Audio1UITests.m; sourceTree = "<group>"; };
 		7D770B1920E674DA00AED7D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D770B2520E6751C00AED7D6 /* It's A Good Day.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "It's A Good Day.mp3"; sourceTree = "<group>"; };
+		7D770B2820E675C000AED7D6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7D770B2A20E67B0F00AED7D6 /* 任贤齐-伤心太平洋.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "任贤齐-伤心太平洋.mp3"; sourceTree = "<group>"; };
+		7D770B2C20E7225F00AED7D6 /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		7D770B2D20E7225F00AED7D6 /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		7D770B3320E7300C00AED7D6 /* DIYSamplesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DIYSamplesViewController.h; sourceTree = "<group>"; };
+		7D770B3420E7300C00AED7D6 /* DIYSamplesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIYSamplesViewController.m; sourceTree = "<group>"; };
+		7D770B7420E92A0400AED7D6 /* CAStreamFormatTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAStreamFormatTestViewController.h; sourceTree = "<group>"; };
+		7D770B7520E92A0400AED7D6 /* CAStreamFormatTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAStreamFormatTestViewController.m; sourceTree = "<group>"; };
+		7D770B7A20EA829C00AED7D6 /* AudioServiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioServiceViewController.h; sourceTree = "<group>"; };
+		7D770B7B20EA829C00AED7D6 /* AudioServiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioServiceViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D770B2920E675C000AED7D6 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +104,7 @@
 				7D770B0B20E674DA00AED7D6 /* Audio1Tests */,
 				7D770B1620E674DA00AED7D6 /* Audio1UITests */,
 				7D770AF120E674D800AED7D6 /* Products */,
+				7D770B2720E675C000AED7D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +121,20 @@
 		7D770AF220E674D800AED7D6 /* Audio1 */ = {
 			isa = PBXGroup;
 			children = (
+				7D770B2A20E67B0F00AED7D6 /* 任贤齐-伤心太平洋.mp3 */,
 				7D770AF320E674D800AED7D6 /* AppDelegate.h */,
+				7D770B2520E6751C00AED7D6 /* It's A Good Day.mp3 */,
 				7D770AF420E674D800AED7D6 /* AppDelegate.m */,
 				7D770AF620E674D800AED7D6 /* ViewController.h */,
 				7D770AF720E674D800AED7D6 /* ViewController.m */,
+				7D770B2C20E7225F00AED7D6 /* ListViewController.h */,
+				7D770B2D20E7225F00AED7D6 /* ListViewController.m */,
+				7D770B3320E7300C00AED7D6 /* DIYSamplesViewController.h */,
+				7D770B3420E7300C00AED7D6 /* DIYSamplesViewController.m */,
+				7D770B7420E92A0400AED7D6 /* CAStreamFormatTestViewController.h */,
+				7D770B7520E92A0400AED7D6 /* CAStreamFormatTestViewController.m */,
+				7D770B7A20EA829C00AED7D6 /* AudioServiceViewController.h */,
+				7D770B7B20EA829C00AED7D6 /* AudioServiceViewController.m */,
 				7D770AF920E674D800AED7D6 /* Main.storyboard */,
 				7D770AFC20E674DA00AED7D6 /* Assets.xcassets */,
 				7D770AFE20E674DA00AED7D6 /* LaunchScreen.storyboard */,
@@ -130,6 +160,14 @@
 				7D770B1920E674DA00AED7D6 /* Info.plist */,
 			);
 			path = Audio1UITests;
+			sourceTree = "<group>";
+		};
+		7D770B2720E675C000AED7D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D770B2820E675C000AED7D6 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +273,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D770B2620E6751C00AED7D6 /* It's A Good Day.mp3 in Resources */,
 				7D770B0020E674DA00AED7D6 /* LaunchScreen.storyboard in Resources */,
 				7D770AFD20E674DA00AED7D6 /* Assets.xcassets in Resources */,
+				7D770B2B20E67B0F00AED7D6 /* 任贤齐-伤心太平洋.mp3 in Resources */,
 				7D770AFB20E674D800AED7D6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,7 +303,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D770AF820E674D800AED7D6 /* ViewController.m in Sources */,
+				7D770B7C20EA829C00AED7D6 /* AudioServiceViewController.m in Sources */,
+				7D770B7620E92A0400AED7D6 /* CAStreamFormatTestViewController.m in Sources */,
 				7D770B0320E674DA00AED7D6 /* main.m in Sources */,
+				7D770B3520E7300C00AED7D6 /* DIYSamplesViewController.m in Sources */,
+				7D770B2E20E7225F00AED7D6 /* ListViewController.m in Sources */,
 				7D770AF520E674D800AED7D6 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
